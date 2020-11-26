@@ -3,7 +3,7 @@ import contractions
 from .taxonomy import taxonomy
 from senticnet.senticnet import SenticNet
 from .config import get_wordnet_pos
-from .sentimetr import find_opinion_words_sentiment, negators, get_sentiment
+from .sentimentr import find_opinion_words_sentiment, negators, get_sentiment
 import re
 
 sn = SenticNet()

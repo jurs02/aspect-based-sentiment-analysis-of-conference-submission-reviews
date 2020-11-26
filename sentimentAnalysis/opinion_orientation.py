@@ -1,5 +1,5 @@
 import re
-from .sentimetr import find_opinion_words_sentiment, adversatives
+from .sentimentr import find_opinion_words_sentiment, adversatives
 
 
 

@@ -12,7 +12,7 @@ def get_aspects():
     frequent_nnps, frequent_adjs = frequent_candidates()
     taxonomy_matching(frequent_nnps, wn.NOUN)
     taxonomy_matching(frequent_nnps, wn.ADJ)
-    get_aspect_by_structure()
+    #get_aspect_by_structure()               uncoment if data is available
     taxonomy_revision()
 
 
