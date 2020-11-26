@@ -1,0 +1,1001 @@
+text,sentiment
+It is potentially an interesting paper presenting  which is the result of large collaborative work ,positive
+However  at the present state it fails to communicate the importance of this work and some aspects of the presentation might be improved ,negative
+So  for me  this is going toward a rejection ,negative
+Overall  my main doubt is the fact that the vocabulary status is still draft (first public working draft)  and it is not clear how far is the ontology from its final form as this is not clearly explained in the paper ,negative
+In terms of design  it would be much better if a clear list of competency questions of the ontology is provided ,negative
+The Motivation section mentions a few examples of things that one would want to know about a profile  but it is not clear if those comprise an exhaustive list or actually  only part of them are dealt with by the ontology ,negative
+I am putting a borderline score due to this ,negative
+This is indeed an important gap that needs to be addressed in particular in the light of appearances of multiple  different vocabularies for profiles ,positive
+The ontology would certainly be of interest to Semantic Web community ,positive
+Thus  there is a clear potential of being used ,positive
+There is no tutorial provided beyond a few examples in the documentation ,negative
+There might be more examples in the related GitHub repo  but this is not clearly stated ,negative
+The model is relatively simple  and extending it seems to be relatively not difficult ,positive
+Specifically for the notion  extension possibility is explicitly provided ,positive
+Limitation of the ontology is not mentioned in the submission ,negative
+The paper only mentions complementary usage with other vocabularies that also describe specifications ,negative
+What is not entirely clear to me is the usage of the property is-inherited-from ,negative
+How does this work exactly?,negative
+What does it mean?,negative
+There is no example clarifying this ,negative
+The ontology is publicly available at a persistent URI ,positive
+Licensing information is also provided ,positive
+Human-readable description is provided  which also includes a schema diagram ,positive
+Machine-readable description seems to be only available at the Github page  but this is rather hard to find ,negative
+I don't think it's fair to ask reviewers to review what is essentially a list of promises of things that may or may not be implemented in a future paper ,negative
+Also  I am quite concerned that the authors have misinterpreted what I think was a fairly clear review on my part  they attribute the following concerns/criticisms to me or my review  which I am quite certain have not been expressed by my review ,negative
+In light of this response and the concerns brought forward by the other reviewers  I will unfortunately have to reduce my scoring for this paper ,negative
+That being said  the authors reference good arguments for this approach to modeling and the ontology the present makes sense in such a modeling context ,positive
+While I have some comments and suggestions on the design of the ontology and the way in which it is presented in this paper (see below)  my overall impression is that this work  in spite of some weaknesses  displays sufficient quality to be in the running for presentation at ESWC ,positive
+Comments/considerations on the paper itself) Abstract I find the meaning of the phrasing unclear ,negative
+In those places I would prefer if a (brief)summary of the key points of the referred work were included in this paper also --so that this paper would be more self-contained ,negative
+) The first listing under Section  is somewhat sloppy in the textual definition,negative
+This phrasing implies a cardinality restriction of + which is inconsistent with cardinality restriction of  on the subclass,negative
+Note that this is a human language issue in the listing in the paper  the ontology does not include such an inconsistency ,negative
+The URI for the ontology as given in the paper produces a  ,negative
+I find that in both utilization and documentation/visualization it helps if one asserts these properties (as far as is possible/reasonable) and would suggest the authors consider doing so ,negative
+The term Resource Descriptor is rather vague and ambiguous ,negative
+Lacking data profile domain expertise  I would expect a resource descriptor to be  essentially  any description of an RDF resource  not necessarily something particular or inherent to the problem space ,negative
+Also  I am somewhat confused by the skosdefinition of this concept  as a resource that _defines_ an aspect of a profile -- isn't it more correct to say that the resource descriptor _describes_ an aspect of a profile (particularly if the role of the descriptor is Guidance,negative
+Stylistic comments A) Figures     and  in printed form there is hardly any visible difference between the white and gray boxes ,negative
+I recommend that a darker shade of gray be used ,negative
+B) The  namespace URI in Section  would look nicer if it were styled inmonospace font ,negative
+C) In the Turtle example that closes Section    the ex prefix is undefined ,negative
+In particular the property definitions do not add so much value  and could be communicated just through the figures used  and/or with reference to the full ontology documentation ,negative
+E) Figure  the range of the has role property is incorrect  (it is skosConceptin the published ontology) ,negative
+I think they have done a thorough job answering most of my concerns ,positive
+The problem is that I think the list of changes require a significant rewrite  and I am not comfortable changing my score without reviewing the final version ,negative
+Therefore I still think the paper is not ready to be accepted at ESWC ,negative
+The paper reads well and it is easy to follow ,positive
+I find it relevant to the community and the community  and I look forward to seeing more examples on the automatic profile negotiation described by the authors ,positive
+However  I do not think the paper currently meets the quality required to be accepted at ESWC ,negative
+I list the main points of improvement below- The paper does not propose a new contribution  as it summarizes an existing working draft publication ,negative
+The authors claim to have submitted the paper to raise awareness and gather feedback from the community  but I think that proposing a tutorial at the conference or writing a primer document for the vocabulary draft may be more appropriate means to reach out to the community ,negative
+As the paper is  I consider it an unfinished vocabulary  and I do not think it would be fair for other vocabulary submissions to treat this effort differently just because it is an ongoing WC recommendation ,negative
+- The vocabulary proposed is not complete ,negative
+I would have expected this kind of specification to be supported by strong real use cases and examples ,negative
+- The ability to negotiate profiles is one of the most interesting aspects of the paper  but the publication never addresses how it would be done  or include examples ,negative
+- There is no vocabulary development methodology in the paper ,negative
+Similarly  there is no proper validation of the proposed vocabulary  except for the illustrative examples ,negative
+Comments related to the ontology in particular- I am unclear on where would the profile information/metadata be stored ,negative
+(difficult to maintain if new profiles are constantly produced) Since the URLs provided in the paper do not resolve (e g   using ex namespace)  this remains unanswered to me ,negative
+I am happy to see that the authors registered the ontology in LOV and submitted the pattern into the Ontology Design Patterns catalogue upon request from the review ,positive
+I understand that there were already references about some of those use cases but the paper should be self-contained to a certain degree ,negative
+The domain of network infrastructure is quite complex one and there is no solution which would target at any type of a network ,positive
+The paper should be improved with regard to the presentation aspect since the title of Section   is named as but this autonomic feature was not introduced before and it should be explained in the Section  Introduction ,negative
+Further  the ontology is first described using modules view but then there is introduced perspectives (before Section  ) which seems to be rather redundant ,negative
+Sticking with the module notion and omitting the another notion (perspective) would make the description clearer and allow to save some space  i e   by removing the part about perspectives before Section   and renaming Section   to Ontology modules ,negative
+It would be better to explain this sooner than at the end of Section   ,negative
+I found these use cases very important for showing  in usage ,positive
+The ontology is not very expressive ,negative
+There are no complete or partial class definition ,negative
+There are many incomplete references and corrupted reference,negative
+The authors present the details of the ontology and pattern used in its development  and include examples and use cases ,positive
+Though the paper is generally well written  the presentation suffers from quite a few small errors and typos ,negative
+As a strength  the ontology presented is a significant advancement over the state of the art  ,positive
+However  in does not include a justification regarding why RDF Schema is not enough  i e ,negative
+The paper includes many references to related work papers ,positive
+It is true that several general vocabularies are reused for some parts (foaf  location  data)  but it is not clear whether the authors have explored telecommunication network specific ontologies as well ,negative
+Section   is not very valuable in this paper  in my opinion ,negative
+The examples provided in the external links (GitHub) are very small (they do not even cover the simple scenario of Fig ,negative
+The ontology has been used in several projects  which is a good point ,positive
+However  it is not clear Conclusions should include future works ,negative
+Year is missing in several references ,negative
+English must be revised  ,negative
+The authors then propose a set of requirements to guide the construction of the ontology which is clear ,positive
+I would only suggest connecting the requirements with their realization in the next session ,negative
+In the use case section  I would have expected a set of validation SPARQL queries over possible evaluation scenarios ,negative
+I think the authors have answered correctly to all the raised issues by the reviewers ,positive
+However  I see that there is still space for improvement which I am not sure the authors can address all of them in the camera ready ,negative
+The newly added material need to be revised again ,negative
+The evaluation of the method is extensive and well done ,positive
+The evaluation results are encouraging  showing a large increase of dictionary terms as compared with fully automated dictionary generation methods ,positive
+Nevertheless  some points of the methodology are unclear  and should be explained in the camera-ready version* What is the impact of the corpus size?,negative
+ is too small to read ,negative
+The evaluation results in terms of performance and average term length appear to be sound (even though perhaps a stronger baseline than WV could have been chosen) ,positive
+However  there is one big weakness that I would highlight I don't see where and how the human comes in the loop ,negative
+But it is not explained at all who the humans are should this be done by experts  or do the authors envisage some sort of crowdsourcing (if the latter  what would be the recruiting and payment policies)  or does this depend on the exact domain of the dictionary?,negative
+Furthermore  no details at all are given on the exact task that the human-in-the-loop is expected to perform ,negative
+It is a pity that the authors seem not to provide sufficient detail on the human-in-the-loop  which throughout the paper is stated to be one of the main contributions of this paper ,negative
+The paper presents a novel approach for dictionary expansion with an explore & exploit approach with human in the loop ,positive
+The paper is interesting and generally quite clear and readable also for non-experts (with some exception as discussed below) and relevant for at least a part of the ESWC audience ,positive
+The structure of the paper is good  the related work is well discussed  the evaluation quite diversified to touch different aspects ,positive
+The potential impact of the proposed approach is definitely large and relevant ,positive
+The two main limitation I see in the paper are the partially unclear/incomplete description of the global approach/process (at a high level) and some missing bits in the discussion/commenting of the experimental results ,negative
+Nonetheless  I think the paper is worth accepting  especially because the authors can easily improve the paper by addressing the comments ,positive
+In section   I found the explanation of the two steps (explore and exploit) quite clear and even understandable for a non-expert reader  maybe something more could be said to justify equations  and  (are there any alternative options? ,positive
+The part I think would need a better and broader explanation is the initial introductory text to Section   where the global approach is presented the brief text does not explain if the outputs of the explore phase are the inputs to the exploit phase  nor it clarifies when and how the human-in-the-loop intervenes  figure  is quite obscure in this regards and  in its current form  it is quite useless ,negative
+I'd recommend a more process-oriented explanation  maybe by means of a schematic workflow (or data flow diagram)  explaining the relation between the steps  the iterations  etc ,negative
+As a consequence  also the actual evaluation protocol in section  is not always crystal clear and would definitely benefit from a more detailed description ,negative
+It is not well explained how the adjudication is performed for the ADE dataset  the authors refer to a medical doctor (only one?,negative
+Moreover  the author do not define what they mean by accuracy in table  is it the % of accepted candidates?,negative
+The comparison with a fully automated terminology extraction method is very interesting (maybe worth a separate sub-section on its own),positive
+I understand that this is partially a comparison of apples and oranges  but some interpretation would help ,negative
+On the other hand  I would expect some kind of recommendation about the ideal or at least the recommendable interval size  given that a more frequent intervention of humans comes also at a higher cost  so  is there a trade-off?,negative
+Finally  also the future proof evaluation is pretty interesting and shows quite well the potential impact of the proposed approach ,positive
+The submitted version was very unclear  since none of the three reviewers understood that people were involved at all times  like the rebuttal text suggests ,negative
+To be a paper about humans-in-the-loop  it should be clear about the role of humans   The paper proposes an approach to categorize short text messages according to predefined taxonomies ,negative
+The paper reads well and the overall approach is interesting and well explained ,positive
+I like the idea of embedding structured knowledge in higher level NLP tasks  particularly for categorization as per this case ,positive
+Unfortunately  this type of approaches are not among the evaluation baselines ,negative
+The approach is interesting ,positive
+However  the paper does not delve into the trade off that the authors take with their choice  namely that we are replacing a dependency on the existence of a training corpus with that of a well structured knowledge base  which is expected to provide the necessary coverage of the domain for the task in hand ,negative
+Another caveat is that possibly entities are not the only information unit that could be leveraged in order to address the problem ,negative
+Language style and topic variance could also have an impact and although the focus of the paper be on entities it would have been good to show awareness on this ,negative
+Finally  I would have expected to see the application of the algorithm on several knowledge bases  not only Wikipedia (or Dbpedia)  and also in a variety of domains ,negative
+I think this is an interesting research work for the community  and therefore can bring attention by other people in the community since many task dealing with short text classification can benefit from it ,positive
+It brings more variety to a field where most of the approaches are highly based on exploiting huge amounts of annotated data ,positive
+The main weakness I see is the not-so-representative selection of supervised candidates to compare with (missing some state of the art approaches in the field now) ,negative
+Other details that may need a bit of clarification or improvement are- During the motivation / beginning of the section describing approach  I miss a bit of the intuition behind using entities as anchors to perform this task ,negative
+- I am not sure that the last part of the results (experiment in section  ) can help us drawing any relevant conclusion ,negative
+The strengths of this paper are listed below  it is an unsupervised short text categorization model which does not require labels   it solves the data sparsity issue for short text categorization since most text classification models are based on rather long texts ,positive
+Several evaluations have been done to inspect different components of the proposed model like entity linking method  the embedding model  and the overall short text classification model ,positive
+The weaknesses of this paper are listed below  the major weaknesses is that KBSTC only uses recognized entities to do short text classification but ignore other words which will have a huge impact on the model performance ,negative
+The baselines used in this paper are rather weak and easy outperformed baselines ,negative
+SVM  NB  and Logistic regression plus TF-IDF are very basic baseline ,negative
+What's more  even for these weak baselines  KBSTC fails to outperform many of them ,negative
+The authors may think that it is reasonable that an unsupervised model can be outperformed by these supervised models ,negative
+I am confused with the explanation to derive Equ ,negative
+Besides  the authors make many assumptions in Equ ,negative
+However  I have to point out a couple of issues for this work below ,negative
+However  the issue of lacking enough context for the short text classification problem is a well-known issue in the text mining field ,negative
+So the claim of authors to only rely on entities but not words is not persuasive enough ,negative
+PTE cannot deal with the entity and category structure ,negative
+I don't get the authors' point about why they cannot use PTE as one of the baselines ,negative
+The major issue of this paper is that the presented method does not show enough delta compared to previous work ,negative
+In general  the approach is interesting and appears to build upon previous work ,positive
+Although the results appear to improve against other unsupervised methods  the authors did not investigate simpler non-supervised techniques as their baselines (e g   simply matching entities between categories and extracted entities) and only compared their approach to non-semantic approaches such as  WordVec ,negative
+The paper is generally well written and easy to follow (minus the squashed paragraphs and sub-sections),positive
+Even though the estimation approach for identifying the most suitable category for a given text is sound ,positive
+The probability formulation of the estimation seems odd and under justified empirically in particular when embedding cosine similarity is used as a proxy measure of how likely a category is observed given a context ,negative
+Finally  some details about the method used for extracting entity mentions are missing ,negative
+This makes replicating the approach difficult ,negative
+The authors only cite an old reference from  (e g   [  ]) ,negative
+The different subsections are squashed ,negative
+Although it is clear that given entities are associated with the corresponding anchor texts from Wikipedia it is not clear how the matches are performed ,negative
+- The calculation of P(c|e) using the similarity of the embedding is simply based on a similarity metrics rather than actual probabilities (how similar are c and e rather than how likely it is to observe c given e) ,negative
+- The authors do not evaluate basic entity-based methods such as simply maximizing the entity overlap between Wikipedia categories and text entities (without using embeddings) ,negative
+The main remaining issue is that the authors are still not considering using textual and semantic features together (they only provided evidence when using only the average textual embedding representation of documents) ,negative
+This additional baseline is useful and shows how the proposed method improves against it ,positive
+Some desirable properties for such a translation are also defined ,positive
+Unfortunately  the paper is yet rather immature  and falls short of the ambitious  valid and interesting goals set forward in the introduction  in the sense that no actual algorithm for a mapping translation appears  no correctness proofs or other indication that it works correctly are provided  there is no evaluation  and some of the formalities are rather sloppy ,negative
+Despite the paper's shortcomings  I encourage the authors to continue working on this topic  as it seems a promising research direction with interesting applications ,positive
+Definition  is formally sloppy ,negative
+Moreover  the requirement on \sigma is too weak ,negative
+Additional properties on \sigma should be required (injective?) ,negative
+Some details are needed on the translation  its semantics  and its correctness ,negative
+The authors only present a couple of specific translation examples  but this has no value other than showing that the concept of mapping translation is  in principle  feasible ,negative
+After reading the paper  I still have no clue on how to translate some arbitrary given mapping ,negative
+Also  other important information is missing  such as a formal explanation or proof that the translation algorithm works correctly,negative
+Other minor comments and typos- multiple tools has- Table  some clarifications are needed ,negative
+It is not clear what the rows refer to ,negative
+In addition to the shortcoming mentioned above  the few conceptual notions that are introduced are not developed or investigated The theoretical framework is non-existent General properties about what is achieved are missing The introduction does not properly convey the problems or contributions  and example already there would help ,negative
+The claims at the bottom of page  and beginning of page  are fuzzy  and the notions mentioned there are not properly explored Selling this as OBDA does not seem right  the problems considered here  are much more narrow than that  definitely the work is oversold Maybe the material has potential if more broadly and more deeply developped,negative
+However  as it is it looks quite ad hoc and limited ,negative
+I can see that some people may have some interest in this kind of very practical work ,positive
+The overall idea is interesting and can leads to some useful tools to bridge language differences or reduce development effort ,positive
+However  I found the complete rationale and motivation in the paper very hard to grasp ,negative
+The two scenarios seem disconnected  which make it hard to determine what the actual focus or contribution of the paper is (is it a templating language?,negative
+There is also too little detail on some important parts - the mapping translation how do these look like  what can they be used for  what problems do they solve  in what language do you write those  how do you execute that and how complex can it get?,negative
+The definition is sound,positive
+I believe the authors might have a valid motivation  but fail to illustrate it with what is written down ,negative
+Unfortunately  this discussion turns out confusing and is quite dominant in the paper ,negative
+This makes the enumeration of technologies in the first paragraph quite unclear ,negative
+Finally  the authors also mention GraphQL queries are more restrictive than SPARQL (page )  but that is actually up to the developer ,negative
+Again  GraphQL only specifies the interface/protocol/result-structure (more or less  I'm cutting corners here for simplicity)  not the query itself (that is done on the backend)  which is fundamentally different from SPARQL ,negative
+Some other comments- there is no comparison to the state of art  related work is only mentioned- the contributions are light for a research paper ,negative
+It is a resources track paper at best ,negative
+- I wouldn't say RDBRDF requires an ontology  but responds to a query ,negative
+- The example jumps into YARRRML & RML without any prior introduction  which is hard to interpret ,negative
+- page   p Normally  a programmer write -> a programmer writesTo conclude  I give this paper a weak reject  allowing the authors to suggest concrete improvements in the rebuttal that convince me ,negative
+The area and main ideas are valuable ,positive
+As possible ways to extend the material presented  it would be valuable to discuss more in detail what are the requirements on a mapping language/mappings as to able able to compute information and query preservation and how could this be achieved ,negative
+Similarly  for the provided translations  although this is discussed informally  formal proofs regarding information/query preservation would be make the paper stronger ,negative
+to the translation  a more detailed description of the translation steps would be in order ,negative
+As an editorial note  the resolution of figure  is relatively low ,negative
+Although readable  a higher resolution image would be better ,negative
+The paper is well motivated  structured and written ,positive
+In my opinion though does not have a scientific contribution but is a guide as to how one can implement a data integration engine using existing OBDA tools ,negative
+Though  this approch solves a relevant problem there are several concerns* Neither the problem nor the mapping solutions are novel ,negative
+which is completely ignored ,negative
+* Given that the main focus is on enabling query translation the details on the translation/mapping step are only briefly and informally described ,negative
+Furthermore  instead of concrete predicate names a more conceptual discussion would be welcome ,negative
+* The approach is not evaluated at all - only a use case is briefly described ,negative
+In summary  the paper fails to make clear the specific contribution over the state of the art ,negative
+Just using some WC recommendations alone does not represent a novel idea ,negative
+--- Post rebuttal ---I do in fact read the call for papers and indeed  the authors included 'results' as is encouraged ,positive
+The files shared on github show the system in use  but don't tell me anything on for instance - whether the use case selected are useful or represenative?,negative
+However  I would warn the authors not to overstate their contribution ,negative
+The application domain might be novel  the techniques are not  and the lack of referral to CSV ODBA techniques outside the SemWeb domain does not help ,negative
+The necessary solutions to overcome some of CSV's limitations are introduced accordingly and clever ,positive
+The paper is very well written and is very understandable ,positive
+Although there is not much scientific value  I believe this paper to be of good quality and quite valuable as systems paper ,positive
+Some comments though- The motivation for an ODBA based approach over materialized or virtual RDF views could be stronger ,negative
+- The issue with treating a CSV file as if it was a single not-normalized relational database table with no keys or integrity constraints is not well explained ,negative
+- It is a real shame the authors did not perform any experiments ,negative
+- Note that were already proposed together so this cannot be a contribution ,negative
+- The comparison between is strange  because they cannot really be compared ,negative
+- A comparison table of what is preserved and what is not in the naive and the proposed approach would be nice ,negative
+- In the abstract  it is not clear that your are generating RRML from RML ,negative
+The percentages in Table  are not clear  as they do not add up ,negative
+That should be clarified in the caption ,negative
+- xRRML is also relevant work that should be mentioned ,negative
+Minor comments- The challenges are not aligned with the ones in the table  i e ,negative
+different names and different order  which hinders readability ,negative
+” is a weird sentence  appropriate for what?,negative
+I'd rephrase ,negative
+- The sentence is unclear ,negative
+- Although it does help reading  the introduction and motivating example section could do with a bit less repetition  ,negative
+Consider shortening the intro as well (it is quite long)  maybe by only mentioning the challenges is the motivating example ,negative
+The research content of the paper is rather shallow ,negative
+Hence  the paper is not self-contained as far as presenting the application of the claimed method to a more elaborate case ,negative
+The presented work is mostly synthetic in nature in the sense that it combines prior proposals ,negative
+I'm not convinced that the approach can be applied systematically ,negative
+It seems to be way too specific and subsumed by prior published works that deal with a broader variety of data ,negative
+Even if the approach can be described in a more abstract manner in the form of a methodology that can be described at the conceptual level  the presentation provided by the authors is far from that ,negative
+Furthermore  the evaluation of the proposed approach is not presented as part of the submission ,negative
+Since the paper is not breaking new ground in terms of research results  it should at least provide evidence of the expected practical impact and include an assessment of the effectiveness using the real data to which they have applied this proposal ,negative
+Nonetheless  the absence of a rigorous evaluation is a shortcoming of the paper ,negative
+The proposed task  scene guessing  is a novel task ,positive
+Predict the possible scene or environment a given object may appear is important for robotic science ,positive
+This paper is well written and easy to understand ,positive
+The major weakness of this paper is the lack of novelty in the method ,negative
+Scene guessing is a good task and I expect to see a very interesting method to handle this ,positive
+However  what this paper presents is rather a simple method - using the pretrained word embedding to compute the semantic similarity between the names of objects and scenes ,negative
+No model training or even transfer learning has been used ,negative
+The embeddings of objects and scenes are purely based on the pretrained embedding models ,negative
+I think publishing them in JSON format is enough for the purpose of this work ,negative
+I don't see a clear need to combine this with the Linked Data Cloud ,negative
+Overall  the article is clearly written and easy to follow ,positive
+However  I find several limitations to its contribution  summarised as follows* The core problem is described as difficult to solve  but this seems an overstatement ,negative
+The problem is defined as scene guessing” but this is a misnomer,negative
+A term such as object location guessing might be clearer ,negative
+In this sense  I am not claiming that is not useful to some engineering applications  but I do not see enough novelty to recognise a scientific contribution ,negative
+If this is not the case  the authors should make a better case for their technique ,negative
+* Considering the publication venue  the article should have at least some content related to semantic technologies ,negative
+However  this work seems to adopt linked data technologies  without engaging with or contributing to them ,negative
+I would even argue that there is almost no semantic content in the model  but just plain sets of symbols  without any axiom or statements about them ,negative
+Moreover  the contribution to semantics in linguistic  cognitive  or philosophical terms is also hard to see ,negative
+* The article uses the terms semantic similarity and relatedness interchangeably  but what the authors mean is relatedness (similarity implies a subsumption relationship) ,negative
+This is a common mistake that should be addressed ,negative
+Clarify ,negative
+In summary  this work could be interesting but I feel it's at too early a stage to warrant publication right now ,negative
+As mentioned above  there are a number of issues which do not appear to be taken into consideration such as the possibility of objects being found equally in multiple rooms  the possibility of different types of the same object (ie underspecification of the object) and a lack of clarity in the explanation of the methodology ,negative
+In terms of methodology  the approach is very simple and doesn't really push any boundaries - one can easily imagine some more interesting use of semantics that adds to this ,negative
+Finally  it's really not clear that the system is of practical use - the accuracy of the system does not seem very high and there's no baseline - one could imagine many possibilities for a suitable baseline to compare against  including methods adopted by others on similar tasks ,negative
+There are also a number of English issues to be fixed ,negative
+The related work section has some references which are not really relevant  such as the music recommendations one - I'm quite sure there are better related references that one could refer to here ,negative
+In Section    it's not clear what you mean about pruning terms - how and why?,negative
+In the normalisation phase  it's not clear why multi-word terms should hinder retrieval of objects in a KB ,negative
+Section   is rather unclear - what do you mean by ,negative
+The description of Full and Partial Coverage is confusing (and these names are a bit odd) ,negative
+There is a good amount of efforts put into this paper ,positive
+I have quite enjoyed reading the different sections the different decisions taken  both for building the ground truth and running and evaluating the approach are explained in good detail ,positive
+The authors tackle the interesting problem of guessing the most probable scene where an object can be found ,positive
+This challenge can be potentially relevant to different scenarios ,positive
+However  there are some significant weaknesses and caveat that led me to score the paper as borderline ,negative
+The main reasons have been already described above in the three top weaknesses section [mainly  lack of innovation in the approach  defects in the evaluation  and a simplistic definition of the task that make it difficult to link it to real use case scenarios]  but here I highlight other issues that may be addressed should this paper gets accepted for publication ,negative
+- Problems with terminology regarding vectorial representation of words ,negative
+- I think there are some issues in the way evaluation has been performed,negative
+It seems like this way  the word embedding-based approaches wont be sufficiently penalised when an  word is found in the scene or object names ,negative
+Experiments show that throughput is two times faster than state of art in the proposed setup ,positive
+Strong points- The paper is really clear and easy to read ,positive
+The motivations are simple  the proposal is well described  the experimentation easy to follow ,positive
+Weak points - Concerning state of art  I'm surprised to not see any positioning ,negative
+ relies on for hierarchies and is cited in state of art  but the positioning remains confused to me ,negative
+I expect to see a comparison based on time and memory complexities ,negative
+- The paper analyzes the complexity in time but not in space ,negative
+This is not coherent ,negative
+I expect to see what is the worst case memory complexity and a comparison ,negative
+- Concerning experimentations  I’m not convinced by the setup ,negative
+How the system behaves with more complex queries involving many types with hierarchies?,negative
+How the system behaves when the number of queries increases?,negative
+- I’m not convinced,negative
+The response is well structured and addresses the issues of the reviews ,positive
+I don't see also the many filters that need to be evaluated with approach ,negative
+The two approaches look very close to me and the trade-off are not crystal clear  on the algorithmic part and on the experiments ,negative
+/ Concerning evaluation  i'm still not convinced by the single query ,negative
+The paper is well written and pleasant to read ,positive
+I enjoyed reading this paper ,positive
+The paper handles an important problem related to reasoning in RDF stream processing ,positive
+The main contributions are a data structure for efficient lookup of the parent classes for a specific class in the hierarchy and an algorithm for querying hierarchical classes encoded in the proposed data structure ,positive
+Related work is detailed in section   it seems to be complete ,positive
+The only thing  I do not see why the vector representation of LiteMat is a problem?,negative
+The results show that  outperforms competitors in term of maximum throughput ,positive
+However  a clear definition of throughput is not given in this section ,negative
+Moreover  in the setup  only one query is used ,negative
+I believe one query is not sufficient for evaluating the throughput of the proposal ,negative
+Again  this is not significant because of the poor experimental setup ,negative
+I believe this needs more elaboration ,negative
+This could be an interesting perspective of this work ,positive
+Minor remarksSection  is missed in the paper organization ,negative
+It is strange to see two conclusions section in the paper ,negative
+In summary  the paper is well written and proposes simple and interesting ideas,positive
+  however  the contribution is minor and the evaluation is very weak,negative
+Overall the paper is well-written,positive
+Perhaps the authors could clarify the following- Section  focuses on RDFS entailment rules  and   but it was unclear to me why they are being discussed ,negative
+- The complexity analysis of the algorithm seems incomplete ,negative
+But the preprocessing involved in constructing these look-up tables is ignored ,negative
+line  and  in Algorithm  are listed as pre-processing  but both are associated with the quadratic time complexity ,negative
+The paper is appropriate for ESWC ,positive
+The paper motivates why the problem of throughput is relevant  but the impact of the solution is hard to predict ,negative
+If  is an optimisation that only works on pure subsumption queries following the pattern of Listing    it might still be useful to incorporate into all RSP engines as an optimisation ,negative
+However  if my suspicions regarding the complexity analysis are correct  then the benefits would ) only hold if pre-processing is done once for one ontology and one query  and ) would induce a large storage requirement  especially when considering large-scale ontologies like DBPedia ,negative
+Nevertheless  disregarding performance claims and assumptions  the presented approach is sound insofar as it demonstrably speeds up subsumption queries once pre-processing has been performed ,positive
+The evaluation covers a good subset of RSP engines  although the meaningfulness of the comparison is questionable given the generality of the RSP engines versus the specificity of C-Sprite when exclusively considering subsumption queries ,positive
+Being more clear about the relationship between Sections  and  would also help ,negative
+Finally  the authors provide good coverage of related works ,positive
+The biggest issue with this paper is however that the analysis of appears to be lacking  making it hard to determine the breadth of its applicability ,negative
+Minor errors in the paper- Section  is missing from the paper organisation ,negative
+- Definition  is incorrect ,negative
+In my view  if the ontology and queries are fixed  using a query language seems like overkill ,negative
+Weak points- The paper mainly describes a system and not a model ,negative
+However  the expected properties of the assembly are not really defined ,negative
+- The Actor model is proposed but why not a dataflow model?,negative
+I expect more motivations for choosing this model ,negative
+- There is no complexity analysis in term of messages/traffic ,negative
+It raises some doubts about the scalability of the system that are not addressed in the experiments ,negative
+- The experimentation mainly stresses the underlying stream engines and not really the proposal itself ,negative
+The actor model description is succinct and does not describe some specific problems related to actor model and stream processing ,negative
+If the “decentralized web of stream” is very appealing  I expect to see how it can differ from a distributed stream platform and what new scientific problems are raised ,negative
+I think there are also problems with correctness  congestion  fault-tolerance  security  incentives that are also very important ,negative
+In the experimentations  it is not crystal clear when a message is consumed ,negative
+I don’t understand what is the objective of these experiments showing that WASP wrapper has low overhead?,negative
+Maybe experiments should focus on the cost in communications of the proposed algorithms costs of the discovery  join and leave etc   ,negative
+It is not mature enough ,negative
+Typo - memebrship work- Each spitting ?,negative
+The answer is nicely written ,positive
+I understand that this paper is a first step in an interesting research direction ,positive
+However  the nature of the first step is a problem for me- If authors want to describe a vision of a decentralized of a web of streams  then I expect to see a definition of this decentralization  then a set of scientific problems to explore to make this decentralization successful (as a vision paper) ,negative
+Unfortunately  the paper is too focused on interoperability problems to provide a global vision ,negative
+I encourage authors to improve their vision of a decentralized web of streams with a clear positioning with a large state of the art  highlighting a scientific problem and providing a first abstract model ,negative
+The paper addresses the important issue of decentralized processing of web streams  which could either be produced by tools for triple transformation such as TripleWave or by stream processing/reasoning engines ,negative
+The authors identified correctly that for static linked data there is good coverage of recommendations  best practices  etc ,positive
+The main contributions of this paper are() The authors lift the server-centric RDF stream processing/reasoning (RSP) paradigm to the actor model by introducing Web Stream Actors (WASPs) that are a triple <id  state  behavior>  and have the main purpose of publishing and (obviously) processing streams ,positive
+This is a central and important contribution for the community ,positive
+The topic of the paper including the main ideas are appealing and important for the RSP community ,positive
+We believe that the paper reads fairly well and is suited for the conference ,positive
+For a research paper  a discussion of different network topologies should be included and more details on WASPS/SWARMS should be given (see below) ,negative
+Further  a real-world problem regarding describing its use and could be included ,negative
+we have some reservations regarding the clarity of some parts- In our opinion  this paper reads more as a tool/resource paper ,negative
+- Clarifications regarding (a) the state/behavior of WASPS and (b) the broker profile in a SWARM are needed ,negative
+The authors describe this part very sketchy ,negative
+For instance in (a)  they introduce a sort of effect based on continuous operators (probably taken from CQL)  but do not outline what kind of continuous operators (e g   LTL temporal operators) are allowed ,negative
+In (b)  the authors miss to comment on message queuing  routing  reliability and security  which should be covered by a message broker ,negative
+- In their SWJ paper (http//www semantic-web-journal net/content/decentralized-messaging-rdf-stream-processing-web  under review)  the authors put more emphasis on LDN  now the protocol seems just a way to implement Sting ,negative
+- Algorithm  needs also more clarification  they have in line  payload and capability management  but this is no further described in the paper ,negative
+Typos- p  par Each spitting The experiment     -> For each splitting  the    - There is a Figure   but no reference to it!,negative
+---- After rebutall ----The authors gave a good and comprehensive update on their intended improvement of the paper (thanks!) ,positive
+They have addressed most of my concerns to my satisfaction  hence I increased my score to accept ,positive
+I believe that the research question is very important to our community  and it should be presented / discussed at ESWC  even if the paper would qualify better as a tool/resource paper ,positive
+However  I point to three improvements that are crucial for a better understanding of the paper - Section  is the weak point of the paper  and this part should be improved by (a) having a (running) real-world example  and (b) clearly describe how state and behavior are related  and define both more thoroughly taking the mentioned continuous (e g   RSP-QL) operators into account ,negative
+- Section  should have a paragraph on possible topologies and constraints (i e  acyclicity)  which could be applied to the network ),negative
+- The extension regarding different time models and a consensus mechanism for (partial/full) synchronization is an interesting topic by itself ,positive
+The research question discussed in this paper is important for the Semantic Webcommunity and I believe that this work makes important first steps to answerit ,positive
+The authors know very well the current state of the art and reuse existingtechnologies whenever possible ,positive
+The paper contains some parts which I did not understand ,negative
+Some of these issue sare rather important ,positive
+This division is clear and even though they are not formally defined  they semantics is clear(state=data  behaviour=code) ,positive
+How these two concepts relate to state and behaviour is not clear ,negative
+Are tasks equivalent to the behaviour?,negative
+Are streams part of thestate?,negative
+If streams are not part of the state  then definition  should include them ,negative
+Moreover  Figure  does not help to clarify this issue ,negative
+On the contrary it makes things worse because it introduces four new concepts source  sink channel  effect (Notice that the caption of the Figure mentions state andbehaviour but these appear nowhere in the figure) ,negative
+At the end of page   thetext mentions Listing  but this is not referenced any longer ,negative
+Moreover  atsome point it seems that the text was improperly removed    WASP ,negative
+Note that page  ends with a listing that is not discussed in the paper ,negative
+These should have been defined before Fig ,negative
+What does it mean?,negative
+Is query part of a WASP?,negative
+Or is somethingthat is received in the WASP's mailbox?,negative
+In my opinion  Section  needs a concrete running example ,negative
+This would certainly improve theunderstanding ,negative
+I don't understand what is the mentioned one used fordescribing the first two types of messages ,negative
+Algorithm  shows how WASP reactsto these messages but it is not clear who is supposed to execute it ,negative
+Is it theWASP itself?,negative
+My confusion comes by looking at the join types of messages ,negative
+But  if this is indeed the case  then wouldn't the network be floodedwith join messages?,negative
+In particular  why shouldn't the C-SPARQL WASP alsosend a join message to CQELS?,negative
+Note that in Fig (a)  there is a label not associated with any arrow ,negative
+Moreover  sometimes s is colored with orange  sometimes it is not ,negative
+Finally  I appreciate that the authors have developed a concrete implementationof their proposal,positive
+I don't understand what the experiments should demonstrate ,negative
+Isn't it something that is close to being obvious?,negative
+Section reports two propositions P looks trivial Clearly a network of WASP can solveany problem that a single WASP can solve (just set the network size equal toone) ,negative
+How have the authors evaluated P?,negative
+Which are the operations that a singleWASP wouldn't be able to solve?,negative
+More explanation is needed here ,negative
+To conclude I believe that the contribution of this paper is interesting and should be presented ,positive
+However  the paper is sometimes not understandable and this severely diminishes its value ,negative
+How these two concepts relate to state and behaviour ? ,negative
+I don't get it ,negative
+Does it mean that streams are states?,negative
+Why do you use the expression relate to?,negative
+and what does it mean in the form of Source Channel Sink?,negative
+Another question Note that page  ends with a listing that is not discussed in the paper ,negative
+Is it Listing 3?' response ,negative
+Another question: I don't understand what is the mentioned one used for describing the first two types of messages. I could not find the answer in the authors' response ,negative
+In particular why shouldn't the C-SPARQL WASP also send a join message to CQELS ? I could not find the answer in the authors' response ,negative
+Also from the paper: P1 states a network of WASPs can solve tasks no individual web stream processing engine can solve This sentence led to my question: How have the authors evaluated P1? ,negative
+None of the existing RSP solutions implements entirely the RSP-QL model ,negative
+But this is not what the proposition states ,negative
+Such impossibility needs to be proven ,negative
+After reading the other reviews  I understand that the approach proposed by the authors is indeed interesting and some reviewers feel comfortable in having this paper accepted ,positive
+My suggestion to the PC chairs is to explore the possibility that this paper gets shepherd to make sure that all unclarities are fixed ,negative
+In the current state  I believe that this paper fits much more in the resource track given the clear pragmatic and implementation-oriented approach ,negative
+The presentation in the paper can be improved ,negative
+Examples (without description) are only given in the very end (Section  )  but the reader would benefit for a more intuitive description already earlier  ,negative
+While it is briefly mentioned at the beginning of the introduction  connection to related tasks (completion  alignment  link prediction) can be discussed in more detail ,negative
+It would be good to briefly explain DL related concepts at the very beginning to benefit readers whoare not familiar with DL specifics but are interested in classification models for concept learning ,negative
+In Section   a link to source code  datasets and ontologies is given ,positive
+However  the linked code repository only seems to contain a not well-organized Java project (with Eclipse settings  auto-generated comments  nearly empty readme)  we were not able to find any of the promised datasets  only some undocumented log files ,negative
+This needs to be better organized for the publication ,negative
+Therefore  a graph showing the performance for different values of Ts could give additional insights and illustrate what is discussed in the text ,negative
+Minor comments- Section  Replace the dot with a comma in the definition of Ns ,negative
+- Table  Indicate the best performing classifiers with a bold font ,negative
+The paper addresses a fundamental and relevant machine learning problem of concept learning ,positive
+The paper is well structured and written ,positive
+The authors have made a good effort to present the background research and put their work in its context ,positive
+The experimental setting is clear and reasonable ,positive
+The experiments include several datasets of different characteristics ,positive
+The results are discussed to a sufficient level of details ,positive
+The results show that wDLF has more omissions and also lower match rate than others ,negative
+Boosting helps in that  but still it would be good to have some more investigation on that ,negative
+The authors' clarifications during the rebuttal phase are appreciated ,positive
+They address my main concerns appropriately ,positive
+The proposed boosting-based concept learning approach is evaluated against the state-of-the-art and shows slightly better performance than its competitors on most of the synthetic evaluation scenarios ,positive
+Making this 'classic' meta-algorithm available for the field of concept learning and showing performance improvements over the state-of-the-art proves the relevance of the authors' work for the machine learning track ,positive
+However  since they could build on existing formalisms from a quite related field I would consider this work as incremental ,negative
+Overall the submission is well written,positive
+ which is rather patchy since many passages were taken from [] and mixed with bridging paragraphs ,negative
+The paragraphs taken from [] were only slightly re-phrased and adapted to the formalism at hand ,negative
+However  certain terms were not introduced properly ,negative
+In combination with particular statements (discussed below) that are still unclear to me (or are actual errors) Sec ,negative
+ is hardly comprehensible without consulting [] and [] ,negative
+ where the authors seemingly forgot to change whole sentences copied from the DL-FOIL paper altogether The experiments presented in this paper showed that DL-FOIL is able to better approximate a target concept  especially when it is particularly complex (i e ,negative
+In terms of the correctness of the submissions there are certain issues that are at least not well justified and thus seem not very reasonable ,negative
+  in the empirical risk formula the normalizer /n seems to be missing ,negative
+ the identity function was never defined ,negative
+Since it is used throughout all the following steps the remainder of the formal considerations is not comprehensible ,negative
+I had to search the source code of the authors’ implementation to get an idea what the identity function could be ,negative
+Since the reformulation steps developed in [] are presented nonetheless it is unclear to me how one would deduce them mathematically based on the proposed identity function ,negative
+I) The definition of c_t seems wrong to me ,negative
+Judging from Algorithm   \alpha_t should be positive ,negative
+Assuming the identity function from I)  c_t would be negative if l_i matches h_t(e_i) and positive otherwise which contradicts with the idea c_t  IMHO ,negative
+I) W_u is not introduced ,negative
+I) I cannot follow the reformulation steps towards Z_t = W_c exp(-c_t) + W_u exp(+c_t) as presented in the submitted manuscript ,negative
+However  I did understand how this definition was developed in [] ,positive
+It seems the reformulation steps were confused due to I) and since the overall distinction between 'covered'  'not covered' and the 'abstain case' is lost ,negative
+I) In Algorithm   h_t(x) is never used after its definition ,negative
+Data sets and source code used in the evaluation are made available ,positive
+However  I didn't find the evaluation scenario settings (positive  negative  and uncertain-membership examples  target concepts to learn) ,negative
+For reproducibility concerns it would have been good to provide a Git tag or commit hash of the source code since its development seems to be ongoing ,negative
+Moreover  the code did not compile without adjusting the Maven POM file ,negative
+Since the DL-Learner provides a variety of algorithms the evaluation could have been extended by at least one more algorithm from the DL-Learner suite ,negative
+the OCEL learning algorithm (which -- in contrast to CELOE -- is not specialised to learn short and human readable concept descriptions) could have provided a more interesting competition ,negative
+Overall  I consider the problems mentioned as major and would opt to reject the submission ,negative
+As a consequence I’m willing to relax my decision ,positive
+However  I still consider the changes needed to get the submission in an acceptable shape as major and have concerns to accept it without a further review ,negative
+The results show that the boosted version of wDLF outperforms the other approaches ,positive
+The topic is very interesting and important for the Web of Data ,positive
+The paper provides a lot of details and very good formal descriptions ,positive
+However  it is quite hard to read and to grasp all these details  as there are no examples illustrating how the learning problem is defined or the boosted approach is developed ,negative
+This makes it especially difficult to understand for the interested reader who is not a total expert in this topic ,negative
+Regarding the training set T  where is the ground truth noted?,negative
+But where is it noted which pair is the ground truth  as this is of course important for the learning process?,negative
+Also  it is not entirely clear how the ground truth  i e   the correct classification of the individuals  can be assessed using a reasoner  in this case JFact reasoner ,negative
+Was the correct concept of the individual not already comprised in the ontologies used for the evaluation?,negative
+Regarding the results  the best performing figure should be made bold  to make it easier to spot ,negative
+**** After RebuttalI would like to thank the authors for clarifiying various issues ,positive
+However  frankly  I still don't see that in    it is described how each ontology was considered for producing  artificial problems/target concepts and related training & test sets  generated according to the randomized procedure    ,negative
+Also no comment on how the correct classification of the individuals can be assessed using a reasoner was provided ,negative
+I really liked this paper  it presents a simple yet interesting idea accompanied with a demo ,positive
+First of all  the choice of tf idf vectors tf doesn't seem to be particularly relevant given the size of the snippets ,negative
+One possible improvement would be to represent the citations with their word vectors ,negative
+I found also very interesting the part of the interpretation of clusters  or in other words  the effort to make sense of the citations ,positive
+The authors found automatically what Gabor et al  defined manually ,positive
+In conclusion  I think that the paper is interesting and globally well written and presented and it would make a nice addition to the conference ,positive
+Based on it  I have decided to raise my score ,positive
+However  the research contribution is rather weak ,negative
+While this is nice  they could have included the repository in their response so I could verify it ,negative
+Finally  some comments regarding the overall usefulness of the approach would be nice ,negative
+The paper reads well and it's easy to follow ,positive
+I find the topic novel and quite useful  as context is crucial to understand how authors cite other related publications ,positive
+In addition  ESWC is a Semantic Web conference  and the relationship of the paper with the Semantic Web is not clear ,negative
+The authors create a linked graph  true  but I haven't found how to query the graph in a machine readable manner ,negative
+The code used to encode the pipeline that creates the graph does not seem to be available online ,negative
+Mentioning the software used is great,positive
+without the right hyperparameters  the approach might be difficult to reproduce ,negative
+A validation by random selection does not seem robust ,negative
+However  the evaluation just shows correctness on the properties extracted ,negative
+Not sure which correlations they are referring to ,negative
+It is never introduced or cited ,negative
+- I am confused by the b-> c definition ,negative
+What does it mean to be contained in A?,negative
+As mentioned in my previous review  I believe the paper shows an interesting approach and worth of being discussed in a venue such ESWC ,positive
+The topic discussed is very relevant for the conference and is trendy ,positive
+Here I express some of my concerns  I would like the authors to address in the next version of this manuscript ,negative
+My major concern is on the readability of the paper ,negative
+There are some passages in the narrative that leave room for doubts ,negative
+For instance  the whole section  starts straightaway with Text Transformation without preparing the reader on what is the expected outcome ,negative
+On this regard  a small section introduction would help ,negative
+In addition  some other parts of the same section are rather confused ,negative
+It is not clear to me  what are your features in this particular context ,negative
+But then again  what is exactly this matrix?,negative
+My mind is tempted to connect it with X[i j] in Section    but X reports the occurrences of words in documents  so I think they are different ,negative
+According to the numbers it seems you aim at reducing the number of instances (snippets) rather than the number of features ,negative
+How you defined accuracy?,negative
+However  if you check  random instances  for each class  and you score them as either correct (TP) or incorrect (FP)  you can compute precision associated to each class ,negative
+In my opinion  the paper shows an interesting approach and worth of being discussed in a venue such ESWC ,positive
+However  I encourage the authors in making further effort in improving their narrative ,negative
+I am sure there is a lot of work behind it but I also found it very hard to follow and quite unclear ,negative
+That is why I personally believe that it cannot be accepted in the current form ,negative
+I would suggest authors to work on some areas  first of all  the paper does not explain well the rationale for the proposed approach  the overall intuition and the key choices ,negative
+Related to this point  the authors should evaluate (or at least discuss) their approach in comparison to the existing ones Overall  I would also suggest authors to make the paper checked by a native English reader so as to improve its readability and clarity ,negative
+-Similarly  section   should explain how the three time intervals for profiling/training/testing were selected ,negative
+Typos   - p   informatino -> information   - p   upto -> up toThis paper deals with the task of creating a graph representation from citations in papers  and abstracting that representation to those between authors of those papers in order to understand what the paper calls as influence of the cited author over the citing author ,negative
+However  I see that to be able to claim that you can measure the influence between authors based on citations might become questionable if there are many negative citations in between ,negative
+Or would your definition of influence simply cover all different citation types  no matter if they are negative or positive?,negative
+This paper is not that good fit with the topics of ESWC its link to semantic web research is rather weak ,negative
+There is no semweb-representation of the data at any phase of the method  nor it makes use of any semweb-resources/traditional tech and does not extend existing ones ,negative
+Minor details- check spelling  ,negative
+Remarks- I am not sure whether the “semantic aspect” is strong enough in the paper and I wonder to some extent whether it is a % fit for the venue ,negative
+- The text is deliberately (often unnecessarily) overloaded and convoluted ,negative
+- The paper lacks a dedicated state of the art section ,negative
+References are scattered throughout the paper and this makes hard to reconstruct prior work and contributions in the field taken into consideration by the authors ,negative
+Besides  it makes hard to understand the contributions and assess the novelty of their contributions ,negative
+This is critical  in my opinion  and the authors should address this point ,negative
+- PageRank has been already applied in this research context ,negative
+However  some references are missing ,negative
+A mention would be appreciated ,negative
+- Dataset it is not clear the dataset being used ,negative
+This can be confusing as several pieces of information are not available on DBLP (e g ,negative
+This should be clarified (also for the sake of open science and reproducibility) ,negative
+These datasets could be pivotal to the study ,negative
+This is not mentioned ,negative
+Any evidence this is the best method available?,negative
+If left unclear  this opens to possible reproducibility issues ,negative
+- Future works section lacks references to central paper on citation function/semantics ,negative
+The provided reference is valid but rather obsolete ,negative
+Minor- Abstract aim at -> aim to- Typo “informatino” pag ,negative
+Potentially confusing ,negative
+It is timely and adds to an active area of research  and has potential to help bring about a greater degree of cohesion between different parts of the Web  across linguistic barriers ,positive
+The authors have clearly articulated their research agenda  situated it in the context of prior work  and explained their motivations for this approach  highlighting the limitations of previous approaches and methods ,positive
+They have drawn evidence from well-known resources such as the Linked Open Vocabularies  although no doubt the problem space (a plethora of ontologies on the Web in various natural languages) is even more complex than implied by the list of four languages (where English dominates) ,positive
+By simply listing these few examples  the authors risk selling the significance and necessity of their research short ,negative
+The evaluation stage illustrates that the process has been largely successful  resulting in new properties and classes being added to the target ontology ,positive
+An opportunity seems to have been missed here to create a bilingual ontology  which  as a result output has potential to be much more significant that an ontology which has been enriched through the addition of properties and classes post-translation ,negative
+These errors should not be too time-consuming to fix  but ought to be addresses for improved clarity and quality of the paper ,negative
+After reading the paper  I am not convinced on how robust the authors' approach is in supporting their claim ,negative
+There are fundamental assumptions in this work  such as existing labels in natural languages ,negative
+The evaluation is also quite limited and I could not judge the effectiveness of the task without knowing the size and complexity of the ontologies ,negative
+I am a skeptic on how the authors' approach significantly outperforms approaches that go beyond string-matching (e g   works based on WordNet synsets) ,negative
+I was also disappointed to read that the authors left out the pre-matching phase explanation from their case study (it is one-third of their entire methodology  after all!) ,negative
+How did you determine that these are not  in fact  false positives?,negative
+In terms of readability of the paper  I found it to be quite low ,negative
+The paper has a lot of repetitions that could be removed to make room for providing additional content that would help readers understand the work better    by providing more examples  especially in non-trivial cases ,negative
+- Section  While LogMap and XMap do not    does not read well ,negative
+Maybe remove While?,negative
+Also  your double-quote marks are also not matching (they are all closing ones?) ,negative
+In summary  I think the work described in this paper is still in a preliminary stage and needs to be significantly improved to show a robust and useful methodology that will be of interest to a large audience ,negative
+They present the tool and demonstrate its effectiveness by means of two distinct experiments  in which it seems clear that it outperforms other available tools working on similar task ,positive
+However  there are a number of grey stuff in the paper  that should be clearly clarified in the rebuttal ,negative
+The issues are listed as follows ,negative
+- What do you mean with ontologies in other natural languages?,negative
+Maybe it is better to clarify here what is expected by the algorithm – when it is presented (Sec  ) is a bit late to me ,negative
+In addition  since hasSynonym is not a typical OWL construct  it would be good to have a list of all the properties one can specify ,negative
+- The sub-graph extraction should be accompanied by an example  because it is not clear when it is working (i e ,negative
+- employing a variety of natural language processing (NLP) techniques it would be important to know which techniques are you using (not only a few examples  but all of them) in order to understand which approaches are adopted and the way they are combined together ,negative
+I would expect that the tool outperform also other tools developed for addressing this task  but there is no evidence about it in the paper ,negative
+- syntactic validation what do you mean with it  and how syntactic mistakes can exist in this context – please provide an example ,negative
+- While the source code of the CLOESC seems to be available on GitHub  there is no documentation in order to understand how to use it  so as to replicate the experiments ,negative
+Honestly  after reading authors' rebuttal  I still think that this paper needs additional work and appropriate extension to be acceptable for presentation to ESWC ,negative
+In addition  there are aspects of the rebuttal that sounds quite inconsistent  ,negative
+There are still areas of developments that should be actually addressed in this paper  instead of postponing them in future works  ,negative
+OWL APIs  RDF libraries) that allows one to create ontologies free from syntactic issues  thus I do not really see how this passage is so crucial ,negative
+- the new documentation provided is still far from being appropriate and still rather limited ,negative
+Concluding  I still think that the work is still to preliminary and not mature for deserving publication ,negative
+This is an important problem which has not seen much attention within the Semantic Web or RSP communities ,positive
+While the problem under consideration in the paper is increasingly-relevant  ,positive
+there are a number of problems with the work and its presentation ,negative
+In terms of presentation  the paper needs signficant work ,negative
+There are many grammatical errors including omission of 'the' or mixing up singular and plural for nouns ,negative
+Thankfully this did not impact the understandability of the writing  but this needs to be fixed ,negative
+Please also refrain from informal English  i e ,negative
+It is also unclear to me whether figures and tables may be surrounded by text ,negative
+Some confusing notation was the usage of 'x' and 'Yes' in Table  ,negative
+I assume 'x' is not a checkmark but rather means 'No' here ,negative
+Please make this consistent ,negative
+Please use the correct symbols ,negative
+A more serious issue is the citation of other works- The authors argue that CEP has been increasingly adopted for real-time analysis in a number of domains  without citing any works pertaining to those domains ,negative
+- The authors refer to an EMC report without providing a citation ,negative
+- The authors list a number of CEP engines  but only cite a paper covering recent advancements rather than actually citing or providing references to the engines ,negative
+- The authors fail to cite or provide references to the datasets and libraries used for their experimental setup ,negative
+- The authors at times cite unrelated works  for example when citing a paper on RTEC as part of Section   seemingly without actually using it ,negative
+- In the related work section  the authors sometimes refer to other works without making it clear why they are related or relevant in the context of their contributions ,negative
+This can be clarified ,negative
+The authors also have a tendency to mischaracterise the limitations of Deep Neural Networks (DNN)  which starts in the related work section ,negative
+The comparison between DNNs and CEP in this work is a false one  of course DNNs need training  but CEP does not provide an alternative---rather it can complement DNNs ,negative
+Yet the authors insist on comparing DNNs and CEP as though they are competing ,negative
+Absent from the related work is a discussion of other approaches to CEP with video data ,negative
+If not  this should be made explicit somewhere ,negative
+A stream is defined as a set of multimedia event knowledge graphs  so I assume they use the same domains?,negative
+A formal description is needed here ,negative
+I had trouble understanding precisely how the two relate  even with the help of the architecture overview ,negative
+It might help to discuss Section  first  as it may clarify why there is a need for windows  but a more thorough explanation beyond an introduction of the composing components is needed ,negative
+Yet there is little formalisation here ,negative
+This leaves me guessing as to what Equations  and  actually mean ,negative
+Combining spatial and temporal formalisms is a difficult problem for which there exists a large body of pre-existing work  none of which is discussed ,negative
+The empirical evaluation is somewhat limited ,negative
+The authors argue that the datasets limit the quantitative analysis  but do not explain why they did not choose a different dataset if this was a problem ,negative
+However  we believe that the paper misses the technical quality for ESWC and should rather be submitted to a workshop ,negative
+The following major issues need to be adressed (order by significance)- The authors do not define the syntax and semantics of any introduced formalism  left alone describing their computational properties (e g   consistency checking in full Allen's Time interval algebra is already NP-complete) ,negative
+The paper has several strong points ,positive
+ there are no important mistakes  but stops somewhat short of being a significant enough as a contribution to the research track ,negative
+In my opinion  there are several methodological shortcomings that need to be overcome before accepting this paper ,negative
+Starting from section   there is no indication of how the dimensions that should be described were selected ,negative
+It is also unclear why reasoning is introduced here  if the use case is about aggregation  why is it needed?,negative
+I don't understand what is meant with fulfill the requirements of the dimensions,negative
+Furthermore  and probably the core of my criticisms  it is not clear what was the method used ,negative
+It looks like a task-based ontology evaluation  but without the proper framework  on cannot be sure ,negative
+Here I think there is a writing issue  as it is  the expected answer is a survey of vocabularies  but you present an evaluation of existing ontologies  that as remarked above  does not make clear how the choice of the three that were evaluated was done ,negative
+Again  there is no comparison against the others ,negative
+One would have expected to see something along the lines of how fast/battery consuming/etc these aggregations are ,negative
+Globally  the paper is at too early stage to be published and I failed to see both its research purpose and the novelty of the approach ,negative
+Main remarks- The aggregation scenario in section  remains vague and limited apparently  it is limited to aggregating data coming from nearby sensors on an edge device  and processing these data on this device ,negative
+Device discovery and configuration seem to be out of scope  and no other communication scheme is envisioned ,negative
+No indication is given also on the data rate and processing chain  that could have been used for evaluation ,negative
+More comprehensive work on IoT data aggregation has been published  years ago about physical mashups  the authors could start from there to improve their use case ,negative
+In addition  the evaluation is limited to technical performance indicators ,negative
+The main claim  having a general usable and dynamically adjustable approach  is not verified ,negative
+* Regarding structure and style** The paper could benefit from proof-reading (general style  consistent introduction of terminology  specific use of terminology)** The structure makes it hard to determine what the contributions of the paper are and what of the author's system is out of scope ,negative
+Thank you for this very interesting paper about a semantic approach to Edge Computing ,positive
+I think the use case - using semantic profiles on gateway nodes to abstract from IoT heterogeneity to promote interoperability - is an important one  and an excellent example of the benefits of semantic technologies in general ,positive
+I think this is a good topic,positive
+I did often struggle to follow what was being described  and needed to spend quite a bit of time jumping back and forth between parts of the paper in order to follow ,negative
+ I find too many aspects of the work and the evaluation choices too unclear to recommend  acceptance  and it could be considerably better situated within the (crowded) field of semantic IoT ,negative
+The regarded topic is relevant and worth being further investigated ,positive
+Nevertheless  I would like to see more in depth explanation on the approach  a fine-grained partitioning of the selected criteria and a discussion why this framework is beneficial compared to other works with a similar scope ,negative
+I do not understand why distributed ledger and distributed data storage  Self-Sovereign Identity and decentralized identifiers and Verifiable Claims are relevant to the framework?,negative
+I do not understand why only Solid and Triple Patterns fragments approaches are cited as decentralized Linked Data approaches?,negative
+This needs to be better clarified ,negative
+The architecture is detailed ,positive
+It is strange to evaluate these different approaches and systems ,negative
+I find the paper hard to read and definitions are confusing ,negative
+The contribution of the paper is minor ,negative
+The contribution is not enough mature to be accepted as a research paper ,negative
+The paper does not have the structure of a research paper ,negative
+This makes the topic of this paper a very timely and important one ,positive
+Finally  it seems to me that the paper does not comply with the guidelines (the margin are too small) ,negative
+I think it makes an excellent contribution to the area and I'm happy to recommend it for acceptance ,positive
+I can see relevance to our own work on the use of blockchains to support RDF querying and certification ,positive
+The paper is very well written and well understandable ,positive
+I find the work interesting,positive
+As such  the work does not prove that it actually solve the problems that centralized querying solutions have (see next paragraph) ,negative
+Mainly for this reason  I think this paper is too preliminary to be presented at a conference ,negative
+The topic is both interesting and relevant for the ESWC Distribution and Decentralisation Track ,positive
+The work is well motivated  the paper itself is easy to follow  and the authors performed an extensive evaluation of the proposed architecture ,positive
+The formalisation could be improved ,negative
+This topic is interesting and highly relevant in the context of decentralizing applications on the Web ,positive
+The general approach and the collaboration-based optimization techniques are described in a way that is easy to understand  and so is the evaluation of the proposed techniques ,positive
+Unfortunately  besides its pros  the paper also has a number of weaknesses ,negative
+For instance  it is unclear to me how a browser can find other browsers to connect to and how it is guaranteed that a browser has eventually seen all the other browsers in the network ,negative
+Although the technical/research contribution is very limited  the experiments provide some insights about the effectiveness of neural and hybrid models ,positive
+Authors also released the source code  and this is another positive fact ,positive
+The paper is well organized and clearly present the conducted research ,positive
+The proposed combination of knowledge based and statistical learning is perspective and gives good results compared to baseline ,positive
+The experiments are well planned and give some insights in the performance of the proposed approach on the two datasets ,positive
+The proposed method yields a slightly improved performance compared to the baseline methods ,positive
+The paper addresses a relevant problem  is clearly structured and mostly well written ,positive
+Links to previous work are mostly explained well ,positive
+A few things were unclear to meIn section   the authors state In this work  we will ignore implicitly mentioned aspects (   ) ,negative
+I would suggest choosing a less confusing example for the paper ,negative
+The evaluation is sound and I find the visualizations the authors provide interesting and helpful ,positive
+Thus  the novelty of the proposed approach is not very high ,negative
+Yet  the evaluation comparing different methods and combinations of methods is interesting and the proposed approach does yield some improvement over the baselines  albeit small ,positive
+Also  the authors published their code open-source which is a useful contribution for the community ,positive
+In conclusion  I think this work could be a valuable contribution to ESWC ,positive
+However  the scientific contribution is rather low for a full research paper ,negative
+What it does  it does well  however ,positive
+So  in conclusion  I do see some value for the community and I will not argue against accepting this paper ,positive
+At the same time  I still find the contribution somewhat limited  so I don't argue for accepting it  either ,negative
+Minor comments- The paper contains a few typos  ,negative
+I however see the way the paper is written unsatisfactory ,negative
+The central concepts of the approach are not formally defined  or the definition is not consistently applied ,negative
+There is a huge number of minor writing infelicities in the text ,negative
+Many passages are hard to read  clearly miss some detail  and would really benefit from simple  practical examples ,negative
+However  with weakness A mentioned above I wonder whether the paper should be accepted as it is  because I would prefer to see the very same paper done with a proper evaluation ,negative
+The paper is generally well written  and it is easy to follow ,positive
+I also think that the problem is interesting and is a natural extension of many of the efforts for knowledge base population/enrichment ,positive
+The feature engineering is well justified and suitable for the task at hand ,positive
+However  there are several things  which probably could have been done with a better intuition ,negative
+In the experimental evaluation there are some things  which are not clear to me ,negative
+This is not clear in the text  and it seems a very important detail  as the quality of the extracted axioms is highly dependent on this ,negative
+The problem is interesting and important  and the evaluation is thoroughly conducted with proper error analysis ,positive
+It is unclear to me what exactly is being compared there ,negative
+The paper targets a very interesting problem with a very interesting solution ,positive
+The paper is very well written  thorough experimentations were conducted ,positive
+The authors have also compared their approach to the existing approach where their approach outperforms existing ones ,positive
+I would actually like to see a running example  for example  Example  and  do not seem to be a concrete example  they are rather the statistics from Wikipedia ,negative
+Also the issue of clearer description of comparison should be given ,negative
+ several problems  are present ,negative
+The general writing of the paper needs improvement ,negative
+Several aspects are unclear  most importantly() No formal problem definition is provided  hence the problem addressed is unclear ,negative
+() The description of the proposed approach is incomplete  i e ,negative
+it is not explained how new concepts and relationships are actually discovered ,negative
+The classification problem is not defined and the feature extraction from text is entirely missing (the authors only state that “the texts were transformed into vectors with numerical characteristics”) ,negative
+() No comparison with a baseline is conducted  even though the authors state in the related work section that the problem has been addressed by a large number of researchers ,negative
+Moreover  other problems are present in the whole text  to give a few examples Missing explanation of uncommon terms  ,negative
+The authors state that models for “classification  regression and grouping” were used  where in fact only a classification problem was present ,negative
+A clear statement to identify the ground truth is missing ,negative
+Moreover the metrics precision and coverage seem to be reversed to me  i e ,negative
+Finally  typos are present within the paper (e g ,negative
+Therefore  the paper should be rejected ,negative
+The authors don't propose a new approach for knowledge discovery  but only compare baseline methods  thus it is unclear  what exactly the contribution is ,negative
+Further  while the approach described in the paper seems closely related to knowledge-base construction/completion  the paper is not mentioning this large research area at all ,negative
+To understand the proposed approach better  adding a concrete example of how the data is processed and classified and how the glossaries and knowledge bases fit in  would help a lot ,negative
+On the other side  Section  describes well known methods  which could be easily removed ,negative
+Further  the description of the approach is hard to follow It is not very clear what data is used where and how the ontology is generated that they collect using the SKOS standard ,negative
+Presenting the processing and application of the models in a more structured or formalised way could make things more clear ,negative
+Incorporating or at least discussing more recent related work is necessary ,negative
+Overall  the paper generally describes different problem areas  so it is not clear what the task is  what the exact model is and what the contribution is exactly ,negative
+Some more points- Some of the citations can be improved ,negative
+Nice practical work applying different classical ML methods for text mining (concept and link discovery/classification) from domain ontologies in SKOS in Portoguese in the oil domain ,positive
+However  the paper suffers from the following deficiencies?,negative
+The paper is easy to read and addresses an interesting problem ,positive
+The proposed method is also interesting,positive
+The proposed method achieves high precision and outperforms other state-of-the-art systems ,positive
+The presentation of this work is mostly clear and the paper is in general very well written ,positive
+All features are well defined  the given examples and illustrations helpful ,positive
+The presentation of related work is clear and thorough ,positive
+However  the related work section and the introduction are partly repetitive  maybe the authors could revise the last part of the introduction to avoid this ,negative
+The approach is evaluated on several relevant datasets and compared to another state-of-the-art context-based method ,positive
+The authors publish their code and data open-source which adds to reproducibility of the evaluation and is a valuable contribution to the community ,positive
+Yet I have a few comments / questions regarding the evaluation- I assume the authors refer to Mean Average Precision in table  and the related descriptions?,negative
+The paper is well structured and easy to follow ,positive
+A fair overview on related work and different knowledge graph completion methods is provided ,positive
+Since a lot of related approaches are already mentioned in the introduction  the related work section has some redundancies  which could be solved by moving the specific parts from the introduction to the related work and merge it ,negative
+While in Sections  and   a running example is used to explain the definitions  it would have been desirable to have examples or figures in particular for Sections   and   ,negative
+There are some concerns about the evaluation of the approach ,negative
+However  I cannot find a proof on that in the paper ,negative
+It would have been interesting to run an experiment where the runtimes of some large-scale KGs would have been presented ,negative
+It would have been also interesting to see results of the approach being executed with different hyperparameters ,negative
+---The authors clarified a lot of missing details in their response ,positive
+I still think the presented approach is promising and interesting ,positive
+However  the evaluation is IMHO too immature and needs improvements ,negative
+The topic of the paper is indeed a very interesting and challenging one ,positive
+The authors present their work in a very clear and structured manner which makes the paper generally easy to read ,positive
+Also  the definitions of the features and their explanations along a running example are very good ,positive
+However  the description of CAFE’s workflow lacks some important details and examples  and the evaluation is rather arbitrary ,negative
+ miss some sort of theory behind or explanation why choosing these features ,negative
+ the features (or feature groups) are explained quite well,positive
+The paper is well written and easy to read ,positive
+The proposed approach is described with sufficient details ,positive
+The proposed approach is evaluated on FBk- and JFk datasets  which are commonly used ones for link prediction problem ,positive
+Several approaches are compared in the experiments  including latent-based ones and symbolic ones ,positive
+My major concern of this paper is that the computation of CNNs is the key component of the new approach  but CNNs were introduced in two previous papers  which makes the contribution of this paper less significant ,negative
+I think the one I mentioned and the conclusions drawn from it are really problematic ,negative
+If this can be fixed I think the paper is a good and interesting paper due to the points mentioned in the Strengths section ,positive
+SummaryThe paper addresses the important task of link prediction on knowledge graphs(KG) ,positive
+The overall idea presented in the paper is nice  and a distinct departure from the recently popular approaches to solving link prediction using neural embedding based latent feature models trained using stochastic gradient descent ,positive
+Although this is a rule-based symbolic method  it doesn’t need to go through the expensive process of learning rule sets for individual relations ,positive
+Outputs of their method are straightforward to interpret ,positive
+The proposed algorithm is any-time  letting the user trade-off performance for running time according to business needs ,positive
+One of the biggest issues with the paper is that they do not compare against the current state of the art in KG link prediction  ConvE   “Convolutional D Knowledge Graph Embeddings” (ConvE  https//arxiv org/pdf/  pdf from AAAI ) ,negative
+Further  background on Denoeux’s work (cited as []) and Dempster-Shafer theory is quite lacking ,negative
+Near the end of page   one of the most important equations for computing beliefs for entities is presented quite abruptly  and it assumes the audience to be familiar with Dempster-Shafer theory ,negative
+The “pi” symbol is not defined  so it’s unclear how exactly the beliefs are computed ,negative
+I believe this is an interesting and relevant paper ,positive
+the reported approach requires improvement before it could be accepted for a conference ,negative
+The underlying idea of using compression for graph mining as such is not new  but its application to Semantic Web KGs could be useful ,positive
+- The obvious shortcoming of the current instance of the proposed approach (stated also by authors themselves) is lack of scalability ,negative
+- The paper is mostly well written ,positive
+For minor presentational issues  see below ,negative
+- The coverage and discussion of related works should be improved ,negative
+The Related Work subsection (within the Introduction) is quite brief although there exists a large amount of research on frequent subgraph (pattern) mining  other graph mining and graph compression techniques (including a few using the MDL) - which of course cannot be covered in detail but should be outlined ,negative
+the paper presents an interesting idea ,positive
+The structure of the paper is a bit odd to me ,negative
+A very brief related work as a part of the introduction and no conclusion are just two rather unusual style decisions with no justification ,negative
+t is poorly written and seems just not ready ,negative
+For example  the preliminaries part defines concepts often without any intuition for the reader why is she reading this passage ,negative
+MDL is too briefly explained given that the principal is so central to the method ,negative
+I assume there must be some connection between the log-factor  MDL  and hypothesis testing but this remains unclear to me as the relationship is not made explicitly clear ,negative
+All this might be obvious to the authors but for a reader with a basic understanding of information theory  this is rather hard to understand ,negative
+The motif search section is a well-written section ,positive
+The presentation of results also needs improvement in my opinion since many things remain unclear ,negative
+To this end  I recommend rejecting the paper despite the novelty of the idea ,negative
+As such  the paper is clearly relevant and interesting for the conference ,positive
+My main problem with this paper is some incoherence which struck me wrt to Fig ,negative
+As such the actual findings seem to be of limited value only  given the fact that the authors mention scalability as one of the main problems of the entire approach ,negative
+All in all  the paper was quite hard to digest and the line of argumentation was not really clear to me ,negative
+The paper is written very clearly and experimentations are performed over different data sets ,positive
+The paper is a bit hard to follow  how much background is required for the reader to follow the paper ,negative
+I would actually expect some examples to be shown in the paper ,negative
+The author has introduced one example in the beginning and then it is not used anywhere ,negative
+The datasets used for experimentation are rather small ,negative
+A missing novel and original contribution is the main weakness of this paper ,negative
+Currently  half of the referenced papers is older than  years ,negative
+Some of the referenced publications are generic  such as “Introduction to Information Retrieval” or “Scikit-Learn Machine Learning in Python” ,negative
+For the before-mentioned reasons  I recommend to reject the paper in its current state ,negative
+- The paper is well-written ,positive
+Small issues are listed further below ,negative
+- The submission is relevant for this conference and the approach  though (or because) it is rather simple  is possibly significant ,positive
+However  significance is difficult to judge  due to limitations of the current experimental evaluation ,negative
+As such  the paper is clearly interesting and relevant to the conference ,positive
+The main problem of this paper  however  is  that there has been set up a huge machinery with a huge amount of parameters to be configured ,negative
+This dataset is well suited for the presented use-case ,positive
+However  at the same time  it is also quite narrow and highly domain specific ,negative
+Another issue causing headache to me is the aspect of disambiguation errors  which has been completely neglected ,negative
+From the experimental section  the results are not really convincing and do not reveal any interesting pattern ,negative
+In the light of the above  I tend to reject the paper ,negative
+The paper is well structured and easy to follow ,positive
+The method of the approach is well described ,positive
+A fair overview on related work is provided ,positive
+In Section   it would be desirable to present more examples as it is done in the beginning of Section   ,negative
+This is fine in general  however  this decreases the own contribution in the paper ,negative
+One of my main concerns is that the paper is only focused on the EurLex dataset ,negative
+The discussion in the conclusion sections tries to draw broader conclusions  but without having experiments as a proof if I understand correct ,negative
+There is no comparison with the mentioned previous classification experiments with EurLex ,negative
+The paper is solid work and the idea is somehwat interesting  ,positive
+ there are two serious points that male me doubt the value of teh work the limitation to propositional logic and the above mentioned problem in the evaluation (which is really a showstopper imho) ,negative
+In my view the paper could have investigated in more detail why it is beneficial to try to learn complex disjointness axioms rather than just disjointness axioms involving class names only ,negative
+However  the paper presents ideas    for techniques used to master enormous search space for axiom construction  that should be discussed at the conference  and therefore I vote accepting the paper ,positive
+Minor issues - Introduce GE before using it ,negative
+The main weakness is the limited experimental evaluation (compared to typical high-quality conference papers) ,negative
+The description of the method  especially the specificity of the GE representation and its mapping onto the KB representation  appears inadequate ,negative
+However  I’m afraid that strengths and weaknesses of the approach was not clearly assessed ,negative
+The main technical problem is related to the OWA and its relation to reasoning with ontology language which can only be approximated through SPARQL queries ,negative
+From a technical point of view the importance of reasoning is not properly discussed ,negative
+Code and dataset have been released on a pubic platform thus others may be able to replicate the experiment ,positive
+However its setup is not described in due detail ,negative
+The paper is fully within the scope of the conference ,positive
+However  the authors appear unaware of relevant recent work on the application of ML models to the same problem which is neither cited nor properly discussed ,negative
+The quality of writing ought to be improved with a proper revision ,negative
+There are problems with style and grammar (and typos)  see below ,negative
+Figures and tables require a better (less brisk) illustration ,negative
+The limitations on the expressiveness of the classes in the targeted axioms are also evident ,negative
+The problematic part starts with the autoencoders ,negative
+This part is very hard to follow ,negative
+It is not clear to me what the vector x is supposed to represent ,negative
+There are obviously far more advanced recommender systems that are state of the art for these benchmarks ,negative
+Introduction & Related workI really like how the introduction introduces the scope of the work  i e   recommending heterogeneous items and the gap that the later on presented model tries to close  i e   the linearity of MF-based recommendation engines ,positive
+The background knowledge and mathematical notation are clearly presented and easy to follow ,positive
+Experiments and Evaluation Solid evaluation with real-world data  appropriate metrics and state of the art algorithms in the context ,positive
+The authors provide also a comparison to previous approaches on well-known state-of-the-art datasets for homogeneous items such as Movielens ,positive
+Overall  I think this is a solid paper that presents a way to utilize KG in RecSYS and thus valuable contribution to ESWC ,positive
+- No source code for the proposed approach ,negative
+Nonetheless  the paper provides convincing benchmark results so that I am in favor of accepting the paper ,positive
+Although the paper’s contribution is a variation of (carefully described) previous approaches and is presented in just one page  I think the paper should be presented at the conference ,positive
+The author should tidy up the presentation (remove nasty typos carefully!,negative
+But more importantly  I genuinely do not think that one can reproduce the research performed in this paper by reading it ,negative
+For all those reasons  I decrease my score to a weak reject ,negative
+The authors write an excellent state of the art section  positioning well their work ,positive
+The contribution is sufficiently detailed  although it can be perceived as a small delta with respect to prior works ,positive
+The proposed work is hard to be replicable ,negative
+While the authors could write such a paper because they could re-use published code  they do NOT share their own code which is ironic ,negative
+The authors do not sufficiently describe the datasets being used in the experiments and how significant they are with respect to real world knowledge graphs ,negative
+I believe this is quite fundamental and should be addressed in this paper in particular since the authors introduce a new dataset without describing what additional features or characteristics this dataset brings and why it is relevant for this research ,negative
+The paper lacks a qualitative analysis ,negative
+Although it seems a simple extension of the ComplEX approach  the results are quite interesting brining new insights in the topic of knowledge graph embedding for link prediction ,positive
+The paper is well organized and written  the whole storyline is clear plus the required information to implement the approach and reproduce the experiments (datasets  training parameters  and model’s formulas) are well described in the paper ,positive
+Overall the readability of the paper is compromised by so many errors  typos  inconsistencies to make the assessment of the value of this work quite hard ,negative
+The paper addresses an important problem yet it is not possible to assess any significant advance in the state of the art ,negative
+It is fully within the scope of the conference  ,positive
+Representation and ML methods do not appear to be particularly original ,negative
+Related work is not critically and comparatively discussed despite the (too) many references ,negative
+As mentioned above related works on multi-relational learning approaches to this domain are absent ,negative
+Due to the quality of writing it is hard to assess the technical quality of the paper ,negative
+The approach is illustrated through a long list of definitions and algorithms the former are often informal and vague  the latter often appear unnecessary due to their simplicity or  conversely  quite obscure owing to the peculiar use of the notation ,negative
+However the experimental design is rather unclear ,negative
+The protocol must be clarified in order to evaluate the results ,negative
+The quality of writing is the principal problem of this paper ,negative
+There are numerous problems with style and grammar  and also repeated typos (too many to report them all) ,negative
+The paper needs serious revision to better explain the approach ,negative
+The authors should also think about targeting a conference on AI in medicine rather than a semantic web conference ,negative
+The problem addressed is very relevant and the contribution is well defined and presented ,positive
+The main limitation of the paper is the evaluation  which does not provide enough findings to assess when the algorithm works better and what for ,negative
+I find the topic of the paper interesting  despite not being an expert in the specific domain  the paper was easy to follow ,positive
+- The second experiment is even more confusing ,negative
+The validity of the results is not evaluated at all ,negative
+- The approach is not compared to any baseline methods nor related approaches ,negative
+- Too much effort goes in the runtime evaluation instead of the qualitative evaluation ,negative
+- The evaluation would be more useful if it was done on more concrete applications where standard benchmark datasets exist    entity summarization  question answering or similar ,negative
+This is not covered in the paper at all ,negative
+- It is not clear nor supported why the approach is restricted to subgraph expressions with at most one additional variable ,negative
+Making assumptions based on one example is not enough ,negative
+- The terms simplicity and intuitiveness are vaguely described  but strongly used throughout the paper ,negative
+The authors show promising results on an experiment with  users and  papers  with two entity types  dataset and method ,positive
+There is limited novelty and impact of this work  as it relies on simple majority voting for user feedback  with results on small scale experiments (experiments focus on only two entity types  dataset and method  with  papers and users only) as an extension of a previously published system ,negative
+This could potentially be useful to ESWC Human-in-the-Loop focused audience ,positive
+Additionally  several parts require further explanation  listed below- The authors mention that Active Learning techniques suffer when dealing with noisy training data but I cannot see how this HSES mechanism is not affected by noisy training data ,negative
+First  there is no reference of previous work to backup this statement  there should be some related work that showcased this deficiency of AL ,negative
+Please explain ,negative
+Please explain further ,negative
+It would be ideal to have experiments on domains and tasks where annotators agree more to see how the system behaves when conflicting views are not always available  i e ,negative
+The approach simply extends an existing NLP system by integrating human feedback in order to improve the performance of the system ,negative
+The novelty and the contributions of the approach are quite limited  as such systems are commonly used in many machine learning applications ,negative
+The evaluation should include the comparison to such methods ,negative
+- The evaluation section is written well and gives interesting insights on the usage of the tool ,positive
+However  again the experiments design has limited novelty compared to existing works that involve human feedback for machine learning ,negative
+The paper presents excellent engineering work  and such tool would be very useful in many NLP applications ,positive
+The paper might be a better fit in the demo track ,negative
+The main reason of my score is that the paper requires a lot of things to fix and extend ,negative
+In general terms  the structure and content is in a preliminar state ,negative
+- The definition of pattern structure is strange ,negative
+Please  follow standard a definition of graph pattern ,negative
+- The authors mention that some tests on pattern aggregation were done  but there is no information about such tests ,negative
+Papers that exceed the page limit will be rejected without review  ,negative
+The english language of the paper needs a bit polishing by a native english speaker ,negative
+There are many syntax errors ,negative
+I like the approach of the authors regarding the three types of structures in KGs that can be contracted (equivalent  dependent and pattern) ,positive
+However we have already seen such approaches in the literature is the form of quotient graphs or VOG summarization [x] ,negative
+Hyper entities remind me of quotient summaries  which the authors seem to completely ignore ,negative
+The authors could benefit by having a look on the recent survey on semantic graphs [x] and updating a bit the related work ,negative
+The paper also has strong editorial issues w r t ,negative
+All these definitions are non standard and do not help readability of the paper ,negative
+Please use standard notions from graph theory instead ,negative
+The paper uses vague constructions throughout the paper (such as the last line of the abstract) ,negative
+If this paper were to be  accepted  it needs a proofread removing words such as most  generally  some  a lot  various   ,negative
+My main concern with this paper is the overlap with [] given this paper  the new version is mainly a delta of two partitioning strategies ,negative
+This assumption should be mentioned ,negative
+* Related work Even if the proposed strategies aim at RDF graphs and corresponding queries  other works on non-RDF distributed graph processing (see above) should be mentioned ,negative
+* Evaluation The paper does not give any information about the execution strategy of the Koral system (because this is not the main focus of this paper) ,negative
+* The loading times of the strategies are very high ,negative
+It is not clear if the overpartitioned minimal edge-cut cover is a contribution of this paper or is a contribution of [] ,negative
+It is not clear why the molecule hash cover is a relevant and interesting approach ,negative
+It seems in many aspects worse than the approach proposed in [] (e g   reduction of packet transfer  execution time) ,negative
+The examples shows that there is still a lot of room to improve in this direction  with both approaches reducing query execution time when compared to more classical partitioning strategies ,negative
+All in all results in a good paper  and I'm sure that people working in RDF systems would be eager to hear about it ,positive
+I believe this work is relevant to the conference and would be found interesting by participants ,positive
+It is clearly written  and benefits from an open-source implementation of the proposed strategies ,positive
+However  I have three major concerns about its acceptance ,negative
+There is a lack of any discussion as to what use cases might benefit from the proposed data placement strategies ,negative
+As previously mentioned  the choice of a single dataset does not allow for an analysis of the scalability of graph partitioning during the loading process ,negative
+Meanwhile  the queries used for evaluation seem to only use simple  OLAP-style queries the single BGPs are either a single star  or a single linear path  with zero bound subjects or objects ,negative
+I believe the selectivity impact of having even one bound subject/object in these queries would have a major impact on both the query performance and the workload balance  and so an evaluation without such queries seems limited ,negative
+This doesn't seem to impact the core contribution of assessing two new data placement strategies  but is problematic without clear indication that text has been copied ,negative
+I think the presentation and evaluation of the two proposed strategies in this paper are nice  and could make a good conference paper ,positive
+However  I feel the evaluation is too limited in its scope  and the paper lacks any real conclusions as to when these strategies can be effectively deployed and what limits they have ,negative
+For these reasons  I believe this submission should be rejected in its current state ,negative
+Moreover  the choice to evaluate over a single dataset makes it impossible to know if such a penalty might have poor scaling characteristics as dataset size/shape changes ,negative
+I remain VERY concerned about the duplication of parts of previously published work  and especially the cavalier attitude taken in the rebuttal about this duplication being just   pages out of  ,negative
+Overall  the topic of the paper is really interested ,positive
+The results are promising ,positive
+The proposed approach is formally defined ,positive
+Some of my concerns are following () I found the paper very difficult to follow ,negative
+Even the paper contains a motivating example  I found it difficult to carry-on from section  onward ,negative
+However  for me it was difficult to follow the used notations and the formalization ,negative
+As such it is very difficult for me to judge the quality of the approach ,negative
+() Paper contains various concepts without explanations ,negative
+The reasons behind the selection of these benchmarks are not provided ,negative
+The new algorithms have been implemented and thoroughly tested ,positive
+The results - in terms of compression rate  accuracy  and performance - look very promising ,positive
+This is a solid piece of work ,positive
+It contains interesting  novel results ,positive
+Moreover  the authors have made an effort to help the reader by illustrating most of the ideas by examples ,positive
+I still think that there is value in the paper in that it introduces a highly non-trivial approach  illustrated by several examples and leading to promising experimental results ,positive
+However  after going over the paper once again  I agree that fully absorbing the paper is indeed difficult ,negative
+The topic is certainly relevant and highly non-trivial ,positive
+I had a lot of difficulties  following this formalization ,negative
+Some parts are overly complex with forward references difficult to follow  and in some paragraphs I simply understood  almost  nothing of what the authors wanted to explain (More details on this in the  specific comments) ,negative
+The examples are not  really illuminating and their sizes make them difficult to  read ,negative
+Also  the use of colors is very unfortunate ,negative
+Some paragraphs are not well written with an excessive use of colons that difficult the reading (see for example the top of page ) ,negative
+The authors could have introduced the notions informally with good examples  and  then present their empirical results ,negative
+This forward reference confused me a lot ,negative
+In general the paper is well written and easy to follow ,positive
+The introduction section states the problem clearly which is the problem of joining similar strings ,positive
+This is a problem related to the entity matching problem  and the authors provide a solution using deep learning models and a nearest neighbor algorithm to provide elements to train the model ,positive
+The authors provide an easy to read and up to date (to my limited knowledge) state of the art and next they describe their approach explaining why they use Gate Recurrent Units (GRU) instead the usual CNNs ,positive
+The loss functions seem reasonable to me and how they are applied too ,positive
+The main concern I have is the fact they do not compare to other approaches addressing  the same problem ,negative
+Overall the paper is well written and presents the proposed clearly  the reported results are relatively good and suggest the benefits of the proposed techniques ,positive
+Moreover  the characteristics of the datasets are not clear described  for example  the distribution of the different repeated values  and  the research questions that guided the experimental study are not stated  These issues reduce the value of the work reported in this paper  and impede for evaluating that a contribution to the semantic web is done in this paper ,negative
+Unfortunately  it is still not clear to me how the proposed approach exploits semantics encoded in knowledge graphs ,negative
+Although the reported experimental results suggest that the approach is effective  because of the lack of usage of semantic it is not obvious how this approach can contribute to the resolution of the semantic driven tasks  ,negative
+Finally  a comparison with approaches from the state of the art in the Semantic Web community is strongly recommended not only in the related work section but also at the experimental level ,negative
+ESWC ()  -The article also lacks a proper related work section  where related work are discussed and compared with the solution proposed by the authors ,negative
+It means that the baseline proposed by the authors in the experimental section is too naive  and it is not surprising that its performance decreases in that way ,negative
+The article is not self-contained and it heavily relies on the tech report,negative

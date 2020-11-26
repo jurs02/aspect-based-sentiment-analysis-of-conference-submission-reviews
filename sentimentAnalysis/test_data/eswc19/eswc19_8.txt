@@ -1,0 +1,10 @@
+This resource paper proposes and develops an ontology for telecommunication networks with 84 concepts, 37 object properties and 59 datatype properties. The ontology follows the methodology proposed by Noy&McGuinness. Why not METHONTOLOGY in Lopez et.al1997? There exist several ones, based on which criteria you chose the methodology proposed by Noy et al?
+The authors then propose a set of requirements to guide the construction of the ontology which is clear. I would only suggest connecting the requirements with their realization in the next session. Can you add the requirements identification to that part of the ontology that satisfies those requirements?
+In the use case section, I would have expected a set of validation SPARQL queries over possible evaluation scenarios. 
+The authors do not reuse an ontology pattern but they propose a pattern named Device-Interface-Link
+
+There are a few sentences that need to be revised, see the attachment
+
+**************************
+
+Thanks to the authors for their detailed answer. I think the authors have answered correctly to all the raised issues by the reviewers. However, I see that there is still space for improvement which I am not sure the authors can address all of them in the camera ready. The newly added material need to be revised again.

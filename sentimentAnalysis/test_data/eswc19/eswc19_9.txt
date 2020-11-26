@@ -1,0 +1,13 @@
+This paper describes a dictionary expansion system that combines automated methods for entity extraction with human-in-the-loop to create domain-specific dictionaries. It works using a text corpus and a collection of seed terms for the dictionary. The automated method consists of 2 stages: explore (which identifies similar terms to the seed corpus) and exploit (which constructs multi-token terms through a variety of methods, such as synonym replacement and sequence generation).
+
+The evaluation of the method is extensive and well done. The authors consider corpora in 3 different domains and build 5 total dictionaries, using 2 types of automated methods in the exploit phase: word2vec and BiLSTM. The exploit automated methods are used in different ways: word2vec is employed for partial synonym replacement and sequence generation, and BiLSTM is used for both forward expansion. The evaluation results are encouraging, showing a large increase of dictionary terms as compared with fully automated dictionary generation methods. 
+
+Nevertheless, some points of the methodology are unclear, and should be explained in the camera-ready version:
+
+* What is the impact of the corpus size? Both word2vec and BiLSTM typically require large training corpora to function. What would be the smallest corpus that could be successfully processed with this method?
+
+* How are the exploit candidates for the different types of exploit approaches (i.e. forward-expansion and backward expansion for BiLSTM, partial synonym replacement and sequence generation for word2vec) picked for the list that is presented to the human annotators? Do you select them based on confidence scores? If yes, how are the confidence scores comparable across the different methods used for one model?
+
+* How did the experts determine the number of iterations was sufficient? Fig.2 could be read to suggest that the method is still able to identify relevant dictionary terms - when the dictionary is indeed saturated, then the number of terms correctly identified by the models should drop.
+
+Also, the font in Fig. 3 is too small to read.

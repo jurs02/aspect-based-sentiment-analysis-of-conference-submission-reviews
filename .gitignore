@@ -1,0 +1,19 @@
+venv/
+.idea
+
+# because the data is not meant to be publically available
+aspectExtraction/data/data_for_frequency_extraction/EKAW18/*
+aspectExtraction/data/data_for_frequency_extraction/ISWC17/*
+aspectExtraction/data/data_for_structure_extraction/*
+
+sentimentAnalysis/test_data/ekaw18/*
+sentimentAnalysis/test_data/iswc18/*
+
+#to keep the directory structure
+!aspectExtraction/data/data_for_frequency_extraction/EKAW18/.gitkeep
+!aspectExtraction/data/data_for_frequency_extraction/ISWC17/.gitkeep
+!aspectExtraction/data/data_for_structure_extraction/.gitkeep
+
+!sentimentAnalysis/test_data/ekaw18/.gitkeep
+!sentimentAnalysis/test_data/iswc18/.gitkeep
+
