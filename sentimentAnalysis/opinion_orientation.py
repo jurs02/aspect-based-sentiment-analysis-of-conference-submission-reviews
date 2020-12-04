@@ -29,7 +29,7 @@ def adversative_between_ow_and_aspect(ow, aspect, sentence):
     return False
 
 
-def orientation_to_interval(orientation, strict_interval=True):
+def orientation_to_interval(orientation, strict_interval=False):
     """ Transforms the given orientation value to one of 5 values: -1,-0.5,0,0.5,1 .
         if the strict_interval argument is set to True, the function only returns -1,0,1
     """
@@ -49,7 +49,7 @@ def orientation_to_interval(orientation, strict_interval=True):
         return 0
 
 
-def opinion_orientation(review, strict_interval=True):
+def opinion_orientation(review, strict_interval=False):
     """For each sentence in review which contains aspect words, it calculates the oriententation of the sentiment
     towards said aspect """
     for sentence_index in range(len(review.sentences)):
