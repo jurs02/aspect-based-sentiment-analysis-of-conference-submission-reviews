@@ -49,7 +49,7 @@ def orientation_to_interval(orientation, strict_interval=True):
         return 0
 
 
-def opinion_orientation(review, strict_interval=False):
+def opinion_orientation(review, strict_interval=True):
     """For each sentence in review which contains aspect words, it calculates the oriententation of the sentiment
     towards said aspect """
     for sentence_index in range(len(review.sentences)):

@@ -93,7 +93,7 @@ for file in os.listdir(path):
         f = open(os.path.join(path, file), 'r', encoding="ISO-8859-1")
         content = f.read()
         r = Review(file, content)
-        opinion_orientation(r, False)
+        opinion_orientation(r, True)
         reviews.append((r, get_numerical_scores(content)))
 
 iswc18_mae_overall=mae(reviews)

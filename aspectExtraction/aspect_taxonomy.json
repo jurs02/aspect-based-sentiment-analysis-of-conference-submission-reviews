@@ -39,7 +39,6 @@
     "scholarship",
     "benchmark",
     "related work section",
-    "art",
     "references",
     "research",
     "comparison",
@@ -66,7 +65,8 @@
     "accuracy",
     "evaluation section",
     "experimental",
-    "evaluate"
+    "evaluate",
+    "evaluating"
   ],
   "presentation": [
     "write",
